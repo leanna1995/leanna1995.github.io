@@ -1,0 +1,44 @@
+body {
+    background: #f9f9f9;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-family: "Noto Sans CJK KR", "Open Sans", Arial, sans-serif ;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.mynav ul {
+    display: -webkit-box;
+        -webkit-box-pack: center;
+        justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin-top: 10rem;
+}
+
+.mynav li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.mynav a {
+    display: block;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    padding: 7px 15px;
+}
+
+.target {
+    position: absolute;
+    border-bottom: 3px solid #000;
+    z-index: -10;
+}
+
+.mynav a,
+.target {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
